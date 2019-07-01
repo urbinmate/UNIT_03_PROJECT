@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>An Online Registration Form</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700">
+  </head>
+  <body>
+    <header>
+      <h1>The Code Review</h1>
+      <div class="wrapper">
+        <h2>Signup for our newsletter!</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div> <!-- end .wrapper -->
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <form action="./index.html" method="post">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="name">
+                <span>Full Name</span>
+              </label>
+              <input  id="name" type="text" name="user_name" placeholder="Required" required>
+            </div>
+            <div>
+              <label for="email">
+                <span>Email Adress</span>
+              </label>
+              <input  id="email" type="email" name="user_email" placeholder="Required" required>
+            </div>
+            <div>
+              <label for="phone">
+                <span>Phone Number</span>
+              </label>
+              <input  id="phone" type="tel" name="user_phone" placeholder="+3630 838 3500">
+            </div>
+            <div>
+              <label for="adress">
+                <span>Street Adress</span>
+              </label>
+              <input  id="adress" type="text" name="user_adress" placeholder="Bóbita utca 17.">
+            </div>
+            <div>
+              <label for="city">
+                <span>City</span>
+              </label>
+              <input  id="city" type="text" name="user_city" placeholder="Nyíregyháza">
+            </div>
+            <div>
+              <label for="state">
+                <span>State</span>
+              </label>
+              <select id="state" name="user_state">
+                <option value="" disabled selected>Choose state</option>
+                <option value="BK">Bács-Kiskun</option>
+                <option value="BA">Baranya</option>
+                <option value="BÉ">Békés</option>
+                <option value="BAZ">Borsod-Abaúj-Zemplén</option>
+                <option value="CSO">Csongrád</option>
+                <option value="FEJ">Fejér</option>
+                <option value="GYM">Győr-Moson-Sopron</option>
+                <option value="HB">Hajdú-Bihar</option>
+                <option value="HE">Heves</option>
+                <option value="JNSZ">Jász-Nagykun-Szolnok</option>
+                <option value="KE">Komárom-Esztergom</option>
+                <option value="NO">Nógrád</option>
+                <option value="PE">Pest</option>
+                <option value="SO">Somogy</option>
+                <option value="SZSZB">Szabolcs-Szatmár-Bereg</option>
+                <option value="TO">Tolna</option>
+                <option value="VA">Vas</option>
+                <option value="VE">Veszprém</option>
+                <option value="ZA">Zala</option>
+              </select>
+            </div>
+            <div>
+              <label for="zip">
+                <span>Zip Code</span>
+              </label>
+              <input  id="zip" type="text" name="user_zipcode" placeholder="4405" maxlength="5">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Newsletter</legend>
+            <fieldset>
+              <legend>Select the newsletters you would like to receive</legend>
+            <ul class="flex">
+              <li>
+                <input id="html" type="checkbox" name="subscribe" value="html_news" checked>
+                <label for="html">HTML News</label>
+              </li>
+              <li>
+                <input id="css" type="checkbox" name="subscribe" value="css_news">
+                <label for="css">CSS News</label>
+              </li>
+              <li>
+                <input id="javascript" type="checkbox" name="subscribe" value="javascript_news">
+                <label for="javascript">JavaScript News</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Newsletter Format</legend>
+            <ul class="flex">
+              <li>
+                <input id="html_format" type="radio" name="format" value="html_format" checked>
+                <label for="html_format">HTML</label>
+              </li>
+              <li>
+                <input id="plain_text" type="radio" name="format" value="plain_text_format">
+                <label for="plain_text">Plain Text</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <label for="message">Other topics you'd like to hear about</label>
+            <textarea id="message" name="user_message" rows="10" cols="50" placeholder="What other programming languages are you interested in?"></textarea>
+          </div>
+        </fieldset> <!-- end of fieldset before Newsletter -->
+
+        <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>Copyright The Code Review</p>
+      </div> <!-- end .wrapper-->
+    </footer>
+  </body>
+</html>
